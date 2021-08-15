@@ -3,12 +3,14 @@
 
 # But not these files...
 !.gitignore
+!configs/airflow.cfg
 !docker-compose.yml
 !README.md
 !LICENSE
 
 # Python
 !__init__.py
+!dags/*.py
 
 # ...even if they are in subdirectories
 !*/
