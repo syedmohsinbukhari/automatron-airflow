@@ -1,0 +1,17 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!docker-compose.yml
+!README.md
+!LICENSE
+
+# Python
+!__init__.py
+
+# ...even if they are in subdirectories
+!*/
+
+# if the files to be tracked are in subdirectories
+# !*/include/*.h
