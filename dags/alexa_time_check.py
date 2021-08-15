@@ -32,7 +32,7 @@ def make_voicemonkey_string():
 with DAG(
     dag_id='alexa-time-check_v1.0.0',
     default_args=args,
-    schedule_interval='* * * * *',
+    schedule_interval='0 12,18 * * *',
     start_date=dt.now(pytz.timezone('Asia/Karachi')) - timedelta(minutes=1),
     dagrun_timeout=timedelta(seconds=10),
     tags=['alexa', 'voice-monkey'],
