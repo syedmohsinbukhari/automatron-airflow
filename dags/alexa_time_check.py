@@ -30,7 +30,7 @@ def make_voicemonkey_string():
 
 
 with DAG(
-    dag_id='alexa_time_check',
+    dag_id='alexa_time_check:v1.0.0',
     default_args=args,
     schedule_interval='* * * * *',
     start_date=dt.now(pytz.timezone('Asia/Karachi')) - timedelta(minutes=1),
