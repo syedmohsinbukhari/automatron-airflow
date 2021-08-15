@@ -4,6 +4,7 @@
 # But not these files...
 !.gitignore
 !docker-compose.yml
+!dockerfiles/Dockerfile
 !README.md
 !LICENSE
 
