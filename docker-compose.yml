@@ -100,7 +100,7 @@ services:
     ports:
       - 8080:8080
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      test: ["CMD", "curl", "--fail", "https://thedisappointinggentleman.com/airflow/health"]
       interval: 10s
       timeout: 10s
       retries: 5
@@ -144,7 +144,7 @@ services:
     ports:
       - 5555:5555
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:5555/"]
+      test: ["CMD", "curl", "--fail", "https://thedisappointinggentleman.com/flower/"]
       interval: 10s
       timeout: 10s
       retries: 5
